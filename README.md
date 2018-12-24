@@ -1,3 +1,3 @@
 # design_patterns
 
-In this repositity I will implement different design pattersn for different languages
+Here I will implement different design patterns for different languages.
