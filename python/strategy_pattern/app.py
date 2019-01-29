@@ -1,21 +1,8 @@
-from design_patterns import image_save_strategy
+from python.strategy_pattern.image_factory import ImageFactory
 
 if __name__ == '__main__':
-    print('Type a number to save image in special format')
-    print('1) .jpg')
-    print('2) .png')
-    print('3) .gif')
+    print('Type a specific format like JPG, PNG ect. to store image:')
     print('Your choice: ', end='')
-    user_input = int(input())
-    any_image = None
-
-    if user_input == 1:
-        any_image = image_save_strategy.JpgStrategy()
-    elif user_input == 2:
-        any_image = image_save_strategy.PngStrategy()
-    elif user_input == 3:
-        any_image = image_save_strategy.GifStrategy()
-    else:
-        assert 0, 'Type a number between 1 - 3!!!'
-
+    user_input = input()
+    any_image = ImageFactory.save_image_in_specific_format(user_input.lower().strip())
     any_image.save_image()

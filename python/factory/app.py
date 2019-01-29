@@ -1,4 +1,4 @@
-from design_patterns.factory.shape_factory import ShapeFactory
+from python.factory.shape_factory import ShapeFactory
 
 if __name__ == '__main__':
     print('Enter type of shape: ', end='')

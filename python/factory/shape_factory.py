@@ -1,5 +1,5 @@
-from design_patterns.factory.circle import Circle
-from design_patterns.factory.rectangle import Rectangle
+from python.factory.circle import Circle
+from python.factory.rectangle import Rectangle
 
 
 class ShapeFactory:
