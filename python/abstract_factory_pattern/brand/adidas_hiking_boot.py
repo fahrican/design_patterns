@@ -1,7 +1,7 @@
-from design_patterns.abstract_factory_pattern.shoe import hiking_boot
+from python.abstract_factory_pattern.shoe.adidas_shoe import AdidasShoe
 
 
-class AdidasHikingBoot(hiking_boot.HikingBoot):
+class AdidasHikingBoot(AdidasShoe):
 
-    def get_shoe_name(self):
-        return 'Adidas hiking boot'
+    def create_adidas_shoe(self):
+        pass

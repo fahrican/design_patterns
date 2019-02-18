@@ -1,7 +1,7 @@
-from design_patterns.abstract_factory_pattern.shoe import sport_shoe
+from python.abstract_factory_pattern.shoe.nike_shoe import NikeShoe
 
 
-class NikeSportShoe(sport_shoe.SportShoe):
+class NikeSportShoe(NikeShoe):
 
-    def get_shoe_name(self):
-        return 'Nike sport shoe'
+    def create_nike_shoe(self):
+        pass

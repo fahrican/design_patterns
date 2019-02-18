@@ -1,6 +1,8 @@
-from design_patterns.abstract_factory_pattern.shoe import shoe
-from abc import ABCMeta
+import abc
 
 
-class HikingBoot(shoe.Shoe):
-    __metaclass__ = ABCMeta
+class HikingBoot(metaclass=abc.ABCMeta):
+
+    @abc.abstractmethod
+    def create_hiking_boot(self):
+        pass
